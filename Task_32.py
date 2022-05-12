@@ -12,3 +12,8 @@ for i in list:
     if list.count(i) == 1:  # выбираем неповторяющиеся числа
         list1.append(i)
 print(list1)
+
+exit()
+numbers=list(map(int,input('Введите последовательность чисел через пробел: ').split()))
+
+print("Cписок неповторяющихся элементов исходной последовательности: ", list(set(numbers)))
