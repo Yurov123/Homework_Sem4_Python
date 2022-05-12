@@ -6,12 +6,14 @@ os.system("cls")
 
 n = randint(1, 1001)
 print('Заданное число = ', n)
+list = []
 
 i = 2  # Чтобы не входил первый простой множитель - единица
 while i <= n:
     if n % i == 0:
-        print(i)
-        n = n/i
-        i -= 1
+         list.append(i)
+      
+    n = n/i
+    i -= 1
     i += 1
-print()
+print(list)
